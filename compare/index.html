@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Compare the two concepts · APARN redesign prototypes</title>
+<meta name="description" content="Three directions for a new website for the Asia Pacific Artistic Research Network (APARN), prepared for Dr Roopesh Sitharan, Director of APARN. All three use the same checked content and the same functions, so they can be compared fairly. They differ in look, tone and the way you move through them.">
+<link rel="icon" href="../assets/icon.svg" type="image/svg+xml">
+<style>:root{--ink:#161616;--muted:#555;--line:#d9d6cf;--bg:#fbfaf7;--a:#F4EFE6;--a-ink:#1C1A17;--a-acc:#A3341C;--b:#121212;--b-acc:#E9A920}
+*,*::before,*::after{box-sizing:border-box}
+html{background:var(--bg);color:var(--ink);-webkit-text-size-adjust:100%}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;font-size:1rem;line-height:1.6;overflow-x:hidden}
+a{color:inherit;text-underline-offset:.15em}
+:focus-visible{outline:3px solid #1a5fb4;outline-offset:2px}
+img{max-width:100%;height:auto;display:block}
+.wrap{max-width:1180px;margin:0 auto;padding:0 16px}
+@media(min-width:48em){.wrap{padding:0 32px}}
+.skip{position:absolute;left:16px;top:-4rem;background:#fff;color:#000;padding:.5rem 1rem;z-index:9}
+.skip:focus{top:.5rem}
+.note{background:var(--ink);color:#fff;font-size:.82rem;padding:.55rem 0}
+.note a{color:#fff}
+.top{padding:2.4rem 0 1.8rem;border-bottom:1px solid var(--line)}
+.k{font-size:.76rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:0 0 .6rem}
+h1{font-size:clamp(2rem,4.6vw,3.1rem);line-height:1.08;margin:0 0 1rem;letter-spacing:-.01em}
+h2{font-size:clamp(1.35rem,2.6vw,1.85rem);line-height:1.15;margin:0 0 1rem}
+h3{font-size:1.1rem;line-height:1.25;margin:0 0 .4rem}
+p{margin:0 0 .8rem}
+.lead{font-size:1.15rem;max-width:46rem}
+.sec{padding:2.4rem 0;border-bottom:1px solid var(--line)}
+.concepts{display:grid;gap:1.2rem}
+@media(min-width:64em){.concepts{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.concept{border:1px solid var(--line);display:grid;gap:.9rem;padding:1.3rem;align-content:start}
+.concept p{margin:0}
+.concept--a{background:var(--a);color:var(--a-ink);font-family:Georgia,"Times New Roman",serif}
+.concept--b{background:var(--b);color:#fff}
+.concept--b a{color:#fff}
+.concept h2{margin:0;font-size:clamp(1.6rem,3vw,2.2rem)}
+.concept--b h2{font-family:"Arial Narrow",Arial,sans-serif;font-stretch:condensed;text-transform:uppercase;letter-spacing:.01em}
+.concept--c{background:#fff;color:#0A0F1C;border-color:#C9D1DE;border-radius:20px}
+.concept--c h2{font-family:Roboto,system-ui,sans-serif;font-weight:500;letter-spacing:-.02em}
+.here{font-family:system-ui,sans-serif;font-size:.74rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em}
+.shots{display:grid;grid-template-columns:3fr 1fr;gap:.7rem;align-items:start}
+.shots img{border:1px solid rgba(128,128,128,.45)}
+.shots figcaption{font-family:system-ui,sans-serif;font-size:.74rem;opacity:.85;margin-top:.3rem}
+.shots figure{margin:0}
+.open{justify-self:start;font-family:system-ui,sans-serif;display:inline-block;font-weight:700;padding:.75rem 1.1rem;border:2px solid currentColor;text-decoration:none;min-height:44px}
+.concept--a .open{background:var(--a-acc);border-color:var(--a-acc);color:#fff}
+.concept--b .open{background:var(--b-acc);border-color:var(--b-acc);color:#121212}
+.concept--c .open{background:#002FA7;border-color:#002FA7;color:#fff;border-radius:999px}
+.facts{font-family:system-ui,sans-serif;font-size:.92rem;display:grid;gap:.6rem;margin:0}
+.facts dt{font-weight:700;font-size:.74rem;text-transform:uppercase;letter-spacing:.08em}
+.facts dd{margin:0}
+table{border-collapse:collapse;width:100%;font-size:.95rem}
+th,td{text-align:left;vertical-align:top;padding:.6rem .8rem .6rem 0;border-bottom:1px solid var(--line)}
+thead th{font-size:.76rem;text-transform:uppercase;letter-spacing:.08em;border-bottom:2px solid var(--ink)}
+tbody th{width:20%}
+@media(max-width:47.99em){table,thead,tbody,tr,th,td{display:block}thead{display:none}tbody tr{padding:.7rem 0;border-bottom:1px solid var(--line)}tbody th,td{border:0;padding:.15rem 0;width:auto}td::before{content:attr(data-label) ": ";font-weight:700}}
+ul,ol{padding-left:1.25rem;margin:0}
+li{margin:.35rem 0}
+.cols{display:grid;gap:1.6rem}
+@media(min-width:64em){.cols{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.grey figure{margin:0}
+.grey img{border:1px solid var(--line)}
+.grey figcaption{font-size:.85rem;color:var(--muted);margin-top:.4rem}
+.cards{list-style:none;padding:0;display:grid;gap:.8rem}
+@media(min-width:64em){.cards{grid-template-columns:1fr 1fr}}
+.cards li{border:1px solid var(--line);background:#fff;padding:1rem;margin:0}
+.cards p{margin:.3rem 0 0}
+.meta{font-size:.85rem;color:var(--muted)}
+.foot{padding:2rem 0 3rem;color:var(--muted);font-size:.9rem}
+.btns{display:flex;flex-wrap:wrap;gap:.6rem;margin:.4rem 0 0}
+.btn{display:inline-block;border:2px solid var(--ink);padding:.6rem .9rem;text-decoration:none;font-weight:700;min-height:44px}</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="note"><div class="wrap">Prototype for discussion: a redesign proposal, not the official APARN website. <a href="../">Back to Concept C: Clear Signal</a></div></div>
+<main id="main" tabindex="-1">
+
+<header class="top"><div class="wrap"><p class="k">APARN website redesign</p><h1>Three prototypes for discussion</h1><p class="lead">Three directions for a new website for the Asia Pacific Artistic Research Network (APARN), prepared for Dr Roopesh Sitharan, Director of APARN. All three use the same checked content and the same functions, so they can be compared fairly. They differ in look, tone and the way you move through them.</p><p class="meta">These are proposal demos, not the official APARN website. aparn.net is unchanged. Search engines are asked not to index these pages.</p></div></header>
+<section class="sec" aria-label="The three concepts"><div class="wrap"><div class="concepts"><article class="concept concept--a" aria-labelledby="card-a">
+  <p class="here">Another concept</p>
+  <h2 id="card-a">Concept A: Editorial Gallery</h2>
+  <p>Calm, cultured and inviting, like a contemporary arts publication or a carefully made exhibition catalogue.</p>
+  <div class="shots">
+    <figure><img src="../assets/shots/a-home-desktop.jpg" width="1440" height="900" alt="Concept A: Editorial Gallery home page on a desktop screen." loading="lazy"><figcaption>Desktop, 1440 pixels</figcaption></figure>
+    <figure><img src="../assets/shots/a-home-mobile.jpg" width="360" height="780" alt="Concept A: Editorial Gallery home page on a phone." loading="lazy"><figcaption>Phone, 360 pixels</figcaption></figure></div>
+  <a class="open" href="https://teohsingjian02.github.io/aparn-prototypeA/">Open Concept A</a>
+  <dl class="facts"><div><dt>Art direction</dt><dd>Warm ivory pages, dark ink and one cinnabar accent. Newsreader, a reading serif, carries the headings and text, with Work Sans for small labels. Generous margins, clear section headings and artworks given room to breathe. Original “isles” plates, a horizon of island shapes, mark each conference year.</dd></div><div><dt>How it works</dt><dd>A guided journey down the home page: discover APARN, see its activity, meet the network, find a way to take part. The network explorer is a tabbed index of people, places, activities and practices beside a reading panel; choosing an item rewrites the panel and marks what it connects to. Stories open in place and the archive is a horizontal timeline.</dd></div><div><dt>Address</dt><dd>https://teohsingjian02.github.io/aparn-prototypeA/</dd></div></dl>
+</article><article class="concept concept--b" aria-labelledby="card-b">
+  <p class="here">Another concept</p>
+  <h2 id="card-b">Concept B: Living Network</h2>
+  <p>An active artistic network and a digital exhibition: explore first, then join, share and publish.</p>
+  <div class="shots">
+    <figure><img src="../assets/shots/b-home-desktop.jpg" width="1440" height="900" alt="Concept B: Living Network home page on a desktop screen." loading="lazy"><figcaption>Desktop, 1440 pixels</figcaption></figure>
+    <figure><img src="../assets/shots/b-home-mobile.jpg" width="360" height="780" alt="Concept B: Living Network home page on a phone." loading="lazy"><figcaption>Phone, 360 pixels</figcaption></figure></div>
+  <a class="open" href="https://teohsingjian02.github.io/aparn-prototypeB/">Open Concept B</a>
+  <dl class="facts"><div><dt>Art direction</dt><dd>White and black with flat blocks of jade, lacquer red and turmeric. Archivo throughout: condensed at poster scale for headings, normal width for reading. An asymmetric but ordered composition with exhibition strips, and an original poster card for every gathering, each with its own colour and shape.</dd></div><div><dt>How it works</dt><dd>Exploration comes first. The connection board sets people, places, activities, and practices and outputs side by side: pick any one and everything it connects to lights up, with lines on wide screens and its story beside it. Clear next steps follow: join, share your work, publish. A black bar keeps Explore, Take part, Publish and Join APARN in reach, with a full-screen index.</dd></div><div><dt>Address</dt><dd>https://teohsingjian02.github.io/aparn-prototypeB/</dd></div></dl>
+</article><article class="concept concept--c" aria-labelledby="card-c">
+  <p class="here">You are viewing this concept</p>
+  <h2 id="card-c">Concept C: Clear Signal</h2>
+  <p>White, precise and technological: the clearest hierarchy of the three, with smooth motion that guides the eye.</p>
+  <div class="shots">
+    <figure><img src="../assets/shots/c-home-desktop.jpg" width="1440" height="900" alt="Concept C: Clear Signal home page on a desktop screen." loading="lazy"><figcaption>Desktop, 1440 pixels</figcaption></figure>
+    <figure><img src="../assets/shots/c-home-mobile.jpg" width="360" height="780" alt="Concept C: Clear Signal home page on a phone." loading="lazy"><figcaption>Phone, 360 pixels</figcaption></figure></div>
+  <a class="open" href="../">Open Concept C</a>
+  <dl class="facts"><div><dt>Art direction</dt><dd>White pages, near-black text and one deep blue accent close to International Klein Blue, a nod to both art history and the screen. Roboto in a strict type scale: one clear title per section, a short lead, no small labels above titles. Rounded buttons and cards, thin lines, and an original two-line transit diagram of every gathering since 2019.</dd></div><div><dt>How it works</dt><dd>A tidy home page with a section index and a back-to-top button; every link within a page scrolls smoothly up or down. Content glides in from the direction you scroll, figures count up, buttons respond to a press and pages fade into each other. The network explorer is an orbit: choose anything and its connections arrange around it, so you can hop from person to place to event.</dd></div><div><dt>Address</dt><dd>https://teohsingjian02.github.io/aparn-prototypeC/</dd></div></dl>
+</article></div></div></section>
+<section class="sec" aria-labelledby="h-side"><div class="wrap"><h2 id="h-side">Side by side</h2>
+<table><thead><tr><th scope="col">Aspect</th><th scope="col">Concept A: Editorial Gallery</th><th scope="col">Concept B: Living Network</th><th scope="col">Concept C: Clear Signal</th></tr></thead>
+<tbody><tr><th scope="row">Feeling</th><td data-label="Editorial Gallery">Calm, cultured, inviting</td><td data-label="Living Network">Active, expressive, a network at work</td><td data-label="Clear Signal">Clean, precise, calmly technological</td></tr><tr><th scope="row">First screen</th><td data-label="Editorial Gallery">One serif headline, the Join button and an artwork, with the next events in a ribbon</td><td data-label="Living Network">A poster headline, the Join button, an artwork on a colour block and two event tickets, then the connection board</td><td data-label="Clear Signal">One clear headline, the Join button and a two-line transit diagram of every gathering since 2019</td></tr><tr><th scope="row">Type</th><td data-label="Editorial Gallery">Newsreader serif for headings and reading, Work Sans labels</td><td data-label="Living Network">Archivo condensed at poster scale, normal width for reading</td><td data-label="Clear Signal">Roboto in a strict scale</td></tr><tr><th scope="row">Colour</th><td data-label="Editorial Gallery">Ivory, ink and one cinnabar accent</td><td data-label="Living Network">White and black with flat jade, lacquer red and turmeric</td><td data-label="Clear Signal">White with one deep blue accent</td></tr><tr><th scope="row">Navigation</th><td data-label="Editorial Gallery">Masthead with five sections; a drop-down menu on phones</td><td data-label="Living Network">Black bar with Explore, Take part and Publish; a full-screen Index</td><td data-label="Clear Signal">Sticky header with a sliding indicator, a section index and back-to-top; a full-screen menu on phones</td></tr><tr><th scope="row">Network</th><td data-label="Editorial Gallery">Tabbed index beside a reading panel</td><td data-label="Living Network">Four-column connection board with drawn links</td><td data-label="Clear Signal">An orbit that re-centres on whatever you choose</td></tr><tr><th scope="row">Archive</th><td data-label="Editorial Gallery">Horizontal timeline with year plates</td><td data-label="Living Network">Poster wall with filters</td><td data-label="Clear Signal">A vertical timeline with filters</td></tr><tr><th scope="row">Original graphics</th><td data-label="Editorial Gallery">“Isles” horizon plates</td><td data-label="Living Network">Poster cards with a colour and shape for each year</td><td data-label="Clear Signal">Transit lines and the network orbit</td></tr><tr><th scope="row">In greyscale</th><td data-label="Editorial Gallery">Light pages, fine rules, serif text</td><td data-label="Living Network">Black bands, heavy condensed type, solid blocks</td><td data-label="Clear Signal">Open white space, thin lines, rounded shapes, sans-serif type</td></tr><tr><th scope="row">Best if APARN wants</th><td data-label="Editorial Gallery">A trusted, scholarly home that reads well</td><td data-label="Living Network">A visible, lively community that invites exploration</td><td data-label="Clear Signal">A clear, modern site that is quickest to navigate</td></tr></tbody></table></div></section>
+<section class="sec grey" aria-labelledby="h-grey"><div class="wrap"><h2 id="h-grey">The same pages in greyscale</h2><p>The three directions stay distinct without colour: serif type and fine rules on ivory (A), black bands and heavy condensed type (B), and open white space with thin lines and rounded shapes (C).</p>
+<figure><img src="../assets/shots/greyscale-home.jpg" width="1440" height="300" alt="The three home pages side by side in greyscale: Concept A on the left, Concept B in the middle, Concept C on the right." loading="lazy"><figcaption>Home pages at desktop width, colour removed. Concept A left, Concept B middle, Concept C right.</figcaption></figure></div></section>
+<section class="sec" aria-labelledby="h-st"><div class="wrap"><h2 id="h-st">Strengths and trade-offs</h2><div class="cols"><div><h3>Concept A: Editorial Gallery</h3><p><strong>Strengths</strong></p><ul><li>Reads easily and feels trustworthy to researchers, institutions and partners.</li><li>Gives artworks, writing and research the most room.</li><li>A quiet structure that will age well and is simple to maintain.</li><li>Very clear on phones: one column, large type and a simple menu.</li></ul><p style="margin-top:.8rem"><strong>Trade-offs</strong></p><ul><li>Less immediate energy: activity is described more than shown.</li><li>Depends on strong images and good writing to stay lively.</li><li>Exploring the network is calmer and asks for a little more reading.</li></ul></div><div><h3>Concept B: Living Network</h3><p><strong>Strengths</strong></p><ul><li>Shows the network’s reach and activity at a glance.</li><li>Memorable and distinctive among artistic research websites.</li><li>Turns the network data into something to explore, and every connection shown is sourced.</li><li>Strong, repeated invitations to join and take part.</li></ul><p style="margin-top:.8rem"><strong>Trade-offs</strong></p><ul><li>Louder: the heavy type needs restraint on long text pages.</li><li>The board is dense on small phones, where it becomes stacked lists with the story first.</li><li>More design rules to follow when adding content, such as poster colours and shapes.</li></ul></div><div><h3>Concept C: Clear Signal</h3><p><strong>Strengths</strong></p><ul><li>The clearest hierarchy and the quickest to scan.</li><li>Feels current and technological while staying calm.</li><li>Motion explains relationships (the orbit, the transit lines) rather than decorating.</li><li>Familiar and comfortable on phones: rounded buttons, a full-screen menu, smooth scrolling.</li></ul><p style="margin-top:.8rem"><strong>Trade-offs</strong></p><ul><li>Less artistic character than A or B; the artworks and diagrams carry the personality.</li><li>The most motion of the three, so it needs care to stay calm and fast. It switches off for visitors who ask for reduced motion.</li><li>White, rounded interfaces are common; the blue accent and the diagrams keep it distinct.</li></ul></div></div></div></section>
+<section class="sec" aria-labelledby="h-shared"><div class="wrap"><h2 id="h-shared">What all three share</h2><ul><li>“Join APARN” opens the APARN Google Group. It sits in the header, the phone menu, the opening screen, after the network section and in a closing invitation, with a note that joining happens on Google Groups.</li><li>Across the network: dated evidence that keeps members, conference participation, host locations and project locations apart.</li><li>Three ways to take part, each with a status label: the APARN Conference (next: APARN2027 at RMIT University Vietnam, details to be confirmed), the APARN Gathering at the SAR Conference (proposed 5–10-minute updates; SAR 2027 runs 21–23 April 2027 in Bratislava) and the APARN Annual Publication (proposed).</li><li>One template, one contribution, two uses, with the “Template for Annual Publication” button on the home page, the publication page, the SAR gathering page and the start of the submission journey.</li><li>The template as an editable DOCX, a PDF reading copy and a web preview, with a presentation guide built on the same structure.</li><li>A submission demo in four steps: download, prepare, add details, review. It asks only for what is needed, the publication checkbox starts unchecked, and nothing is uploaded, sent or stored.</li><li>An archive of every gathering since 2019, with programmes, organisers and links to the published work.</li><li>Content kept in JSON files, pages readable without JavaScript, keyboard and screen-reader support, reduced motion respected, and layouts checked at 360, 768 and 1440 pixels.</li></ul>
+<div class="btns"><a class="btn" href="../downloads/APARN-Research-Progress-Template-draft-v0.1.docx" download>Template (DOCX, editable)</a><a class="btn" href="../downloads/APARN-Research-Progress-Template-draft-v0.1.pdf">Template (PDF)</a></div></div></section>
+<section class="sec" id="proposal" aria-labelledby="h-prop"><div class="wrap"><h2 id="h-prop">Proposal summary for Dr Roopesh Sitharan, Director of APARN</h2><p class="lead">The current aparn.net is accurate but static and text-heavy. All three prototypes keep every verified fact and add what the site is missing: a clear way in, visible activity across the region, simple navigation, artistic character and one easy path from a short SAR update to the year-end publication.</p>
+<ol><li><strong>Joining is always one step away.</strong> “Join APARN” is the strongest button on every page and goes straight to the Google Group. A line beside it says that joining happens on Google Groups, and five benefits explain why to join, each backed by a dated source.</li><li><strong>International activity you can see.</strong> Across the network brings together people, places, events and published work: 11 documented places plus the online editions, eight annual meetings since 2019 and 28 pieces in APARN’s JAR channel. Figures are dated and never mix conference participation with membership. Member locations stay private until APARN approves data to show.</li><li><strong>Navigation that stays simple.</strong> Concepts A and C use five sections and Concept B three, in place of a long list of event pages. Every past event has its own archive page, and every address works as a direct link.</li><li><strong>Artistic character.</strong> Credited artworks from APARN’s own events, original graphics for each concept and warm, direct wording. The three directions offer a calm editorial voice, an energetic exhibition voice or a clear, technological one.</li><li><strong>From SAR update to publication.</strong> One template, one contribution, two uses: prepare one contribution, share a 5–10-minute update at the APARN Gathering at the SAR Conference, and opt in to the year-end collection. The demo shows the whole journey honestly, and the README sets out what a live submission service would need.</li></ol><p style="margin-top:1rem">Please choose a direction (or a mix), confirm the open items below, and approve the draft template limits. With those answers the chosen concept can be prepared for launch.</p></div></section>
+<section class="sec" id="decisions" aria-labelledby="h-dec"><div class="wrap"><h2 id="h-dec">To confirm before launch</h2><ol><li>Dr Roopesh Sitharan’s title and start date as Director: the JAR channel calls him Director, but aparn.net and SAR’s page still list five equal convenors.</li><li>APARN2027 at RMIT University Vietnam: campus or city, dates, theme, call, organising team and a contact.</li><li>The APARN Gathering at SAR 2027: whether it will happen, its date and time, whether it is online or in person, and how the 5–10-minute updates are selected.</li><li>The APARN Annual Publication: editors, publisher, format, schedule, licence, the template limits (400–600 words, one or two images), and whether an ISBN or DOI is used.</li><li>Whether the 2025 yearbook pilot (SAR’s APARN page) was published.</li><li>How the June 2026 online gathering during SAR’s Galway forum went (it was announced in the January 2026 newsletter).</li><li>Rebordering the Archipelago: the JAR channel dates it 2024, the January 2026 newsletter 2025 (it was launched in Porto in 2025).</li><li>Credits and permissions for every reused image, especially the three images without a stated credit.</li><li>Which contact addresses to publish (Director, convenors, or one shared APARN address).</li><li>Approved member-location data, if APARN wants to show where members are based.</li><li>The YouTube channel handle (@APARN202, as printed in the 2024 info pack).</li></ol>
+<p style="margin-top:1rem"><a href="../sources/">Sources, credits and open questions</a> · <a href="https://github.com/teohsingjian02/aparn-redesign-prototypes">Source code and content on GitHub</a></p></div></section>
+</main>
+<footer class="foot"><div class="wrap"><p>Prepared for discussion, November 2026. Content checked 24 November 2026. The official APARN website is <a href="https://aparn.net">aparn.net</a>.</p></div></footer>
+</body>
+</html>
