@@ -10,13 +10,13 @@
 <link rel="icon" href="../../assets/icon.svg" type="image/svg+xml">
 <link rel="preload" href="../../assets/fonts/roboto-normal-latin-3.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="../../assets/c.css">
-<script>(function () { var r = document.documentElement, m = null; r.classList.add("js"); try { m = sessionStorage.getItem("aparn-motion"); } catch (e) {} var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches; if (m === "on" || (m !== "off" && !reduce)) r.classList.add("anim"); if (m === "off") r.classList.add("motion-off"); })();</script>
+<script>(function () { var r = document.documentElement, m = null; r.classList.add("js"); try { m = localStorage.getItem("aparn-motion"); } catch (e) {} var q = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches; if (m === "on" || (m !== "off" && !q)) r.classList.add("anim"); if (m === "off") r.classList.add("motion-off"); })();</script>
 <script defer src="../../assets/js/aparn.js"></script>
+<script defer src="../../assets/js/motion.js"></script>
 <script defer src="../../assets/js/c.js"></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<div class="proto"><div class="wrap proto-in"><p>Prototype for discussion: a redesign proposal, not the official APARN website. <strong>Concept C: Clear Signal.</strong> <a href="../../compare/">Compare all three concepts</a></p><button type="button" class="motion-sw" data-motion-toggle aria-pressed="false" hidden><span>Animations</span><span class="motion-sw-k" aria-hidden="true"></span></button></div></div>
 <header class="top" data-top>
   <div class="wrap top-in">
     <a class="logo" href="../../"><svg class="logo-m" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M8 24 16 8l8 16" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="16" cy="8" r="4" fill="#002FA7"/><circle cx="8" cy="24" r="4" fill="currentColor"/><circle cx="24" cy="24" r="4" fill="currentColor"/></svg><span class="logo-t">APARN</span><span class="vh"> home</span></a>
@@ -38,7 +38,7 @@
 </div>
 <main id="main" tabindex="-1">
 
-<header class="phead"><div class="wrap"><a class="back" href="../../programme/"><svg class="ico ico--back" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M16 10H5M9 5l-5 5 5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Programme</a><h1 class="h1" data-rise>APARN Gathering at the SAR Conference</h1><p class="lead" data-rise>Each year, during the Society for Artistic Research’s conference or forum, APARN members come together to share what they are working on, online, so members who cannot travel can join in.</p><div class="phead-act" data-rise><a class="btn btn--template btn--lg" href="../../template/" data-template-link>Template for Annual Publication</a><p>Prepare one research update for your SAR presentation and, if you choose, APARN’s year-end publication.</p></div></div></header>
+<header class="phead"><div class="wrap"><a class="back" href="../../programme/"><svg class="ico ico--back" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M16 10H5M9 5l-5 5 5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Programme</a><h1 class="h1"><span class="w"><span class="wi" style="--d:0">APARN</span></span> <span class="w"><span class="wi" style="--d:1">Gathering</span></span> <span class="w"><span class="wi" style="--d:2">at</span></span> <span class="w"><span class="wi" style="--d:3">the</span></span> <span class="w"><span class="wi" style="--d:4">SAR</span></span> <span class="w"><span class="wi" style="--d:5">Conference</span></span></h1><p class="lead" data-rise>Each year, during the Society for Artistic Research’s conference or forum, APARN members come together to share what they are working on, online, so members who cannot travel can join in.</p><div class="phead-act" data-rise><a class="btn btn--template btn--lg" href="../../template/" data-template-link>Template for Annual Publication</a><p>Prepare one research update for your SAR presentation and, if you choose, APARN’s year-end publication.</p></div></div></header>
 <section class="sec" id="next" aria-labelledby="h-next"><div class="wrap">
   <h2 class="h2" id="h-next" data-rise>Next: SAR 2027 in Bratislava</h2>
   <div class="feature" data-rise><p class="feature-m"><span class="status status--tbc">Details to be confirmed</span> 21–23 April 2027 · Academy of Performing Arts, Bratislava</p><p>SAR’s 18th International Conference on Artistic Research, “Beyond the Familiar”, runs 21–23 April 2027. Join fellow members to share where your research is now. The APARN team will confirm the date, time and format of the gathering.</p><p class="small">SAR 2027 has its own call (closing 25 November 2026) and registration on <a class="" href="https://sar2027.eu/sk" rel="noopener" target="_blank">sar2027.eu<span class="ext-mark" aria-hidden="true">↗</span><span class="vh"> (opens in a new tab)</span></a>. The APARN gathering is separate.</p></div>
@@ -80,9 +80,10 @@
       <li><a class="" href="https://sar2027.eu/sk" rel="noopener" target="_blank">SAR 2027<span class="ext-mark" aria-hidden="true">↗</span><span class="vh"> (opens in a new tab)</span></a></li>
       <li><a class="" href="https://aparn.net" rel="noopener" target="_blank">Current aparn.net<span class="ext-mark" aria-hidden="true">↗</span><span class="vh"> (opens in a new tab)</span></a></li></ul></div>
     <div><h2 class="foot-h">This prototype</h2><p class="small">A redesign proposal for discussion. Content checked 24 November 2026.</p><ul class="foot-list">
+      <li><a href="../../compare/">Compare all three concepts</a></li>
       <li><a href="../../sources/">Sources, credits and open questions</a></li>
       <li><a href="https://teohsingjian02.github.io/aparn-prototypeA/">See Concept A: Editorial Gallery</a></li>
-      <li><a href="https://teohsingjian02.github.io/aparn-prototypeB/">See Concept B: Living Network</a></li></ul></div>
+      <li><a href="https://teohsingjian02.github.io/aparn-prototypeB/">See Concept B: Living Network</a></li></ul><button type="button" class="motion-sw" data-motion-toggle aria-pressed="false" hidden><span>Animations</span><span class="motion-sw-k" aria-hidden="true"></span></button></div>
   </div>
 </footer>
 <a class="totop" href="#main" data-totop><svg viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M10 16V4M5 9l5-5 5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="vh">Back to top</span></a>

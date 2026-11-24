@@ -10,13 +10,13 @@
 <link rel="icon" href="../../assets/icon.svg" type="image/svg+xml">
 <link rel="preload" href="../../assets/fonts/roboto-normal-latin-3.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="../../assets/c.css">
-<script>(function () { var r = document.documentElement, m = null; r.classList.add("js"); try { m = sessionStorage.getItem("aparn-motion"); } catch (e) {} var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches; if (m === "on" || (m !== "off" && !reduce)) r.classList.add("anim"); if (m === "off") r.classList.add("motion-off"); })();</script>
+<script>(function () { var r = document.documentElement, m = null; r.classList.add("js"); try { m = localStorage.getItem("aparn-motion"); } catch (e) {} var q = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches; if (m === "on" || (m !== "off" && !q)) r.classList.add("anim"); if (m === "off") r.classList.add("motion-off"); })();</script>
 <script defer src="../../assets/js/aparn.js"></script>
+<script defer src="../../assets/js/motion.js"></script>
 <script defer src="../../assets/js/c.js"></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<div class="proto"><div class="wrap proto-in"><p>Prototype for discussion: a redesign proposal, not the official APARN website. <strong>Concept C: Clear Signal.</strong> <a href="../../compare/">Compare all three concepts</a></p><button type="button" class="motion-sw" data-motion-toggle aria-pressed="false" hidden><span>Animations</span><span class="motion-sw-k" aria-hidden="true"></span></button></div></div>
 <header class="top" data-top>
   <div class="wrap top-in">
     <a class="logo" href="../../"><svg class="logo-m" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M8 24 16 8l8 16" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="16" cy="8" r="4" fill="#002FA7"/><circle cx="8" cy="24" r="4" fill="currentColor"/><circle cx="24" cy="24" r="4" fill="currentColor"/></svg><span class="logo-t">APARN</span><span class="vh"> home</span></a>
@@ -38,14 +38,14 @@
 </div>
 <main id="main" tabindex="-1">
 
-<header class="phead"><div class="wrap"><a class="back" href="../../programme/"><svg class="ico ico--back" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M16 10H5M9 5l-5 5 5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Programme</a><h1 class="h1" data-rise>APARN Conference</h1><p class="lead" data-rise>Each year a different host opens its doors to artists, researchers, educators and communities from across the Asia Pacific, to share practices, test ideas and build friendships that last.</p></div></header>
+<header class="phead"><div class="wrap"><a class="back" href="../../programme/"><svg class="ico ico--back" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M16 10H5M9 5l-5 5 5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Programme</a><h1 class="h1"><span class="w"><span class="wi" style="--d:0">APARN</span></span> <span class="w"><span class="wi" style="--d:1">Conference</span></span></h1><p class="lead" data-rise>Each year a different host opens its doors to artists, researchers, educators and communities from across the Asia Pacific, to share practices, test ideas and build friendships that last.</p></div></header>
 <section class="sec" id="next" aria-labelledby="h-next"><div class="wrap">
   <h2 class="h2" id="h-next" data-rise>Next: APARN2027</h2>
   <div class="feature" data-rise><p class="feature-m"><span class="status status--tbc">Details to be confirmed</span> RMIT University Vietnam</p><p>The next APARN conference will be hosted by RMIT University Vietnam: APARN’s first meeting in Vietnam. Dates, city, theme and the call for contributions will be announced through the APARN Google Group.</p><p>City, dates, theme and call: to be announced.</p><div class="row-act"><a class="btn btn--join" href="https://groups.google.com/g/ap-arn" rel="noopener" target="_blank" data-join>Join APARN<span class="vh"> (opens Google Groups in a new tab)</span></a><p class="small">Opens Google Groups. You join there. Calls are shared there first.</p></div></div>
 </div></section>
 <section class="sec sec--tint" id="expect" aria-labelledby="h-expect"><div class="wrap">
   <h2 class="h2" id="h-expect" data-rise>What to expect</h2>
-  <ul class="plain"><li>Papers, performances, creative interventions, workshops and video essays, usually 15–20 minutes each.</li><li>Open to artistic researchers in the region and to those elsewhere with an interest in it.</li><li>Publication in APARN’s channel of the Journal for Artistic Research; some hosts add partner journals.</li><li>APARN2026 was free to attend. Travel bursaries were not available.</li></ul><p class="source">Sources: <a href="https://aparn.net/2024-2/" rel="noopener" target="_blank">#APARN 2024 (Art as Research: Methods for Synthetic Reasoning)</a>; <a href="https://aparn.net/aparn2025/" rel="noopener" target="_blank">#APARN2025 (Artistic Research for Creative Communities)</a>; <a href="https://aparn.net/" rel="noopener" target="_blank">#APARN2026 call (homepage of aparn.net)</a></p>
+  <ul class="plain"><li>Papers, performances, creative interventions, workshops and video essays, usually 15–20 minutes each.</li><li>Open to artistic researchers in the region and to those elsewhere with an interest in it.</li><li>Publication in APARN’s channel of the Journal for Artistic Research; some hosts add partner journals.</li><li>APARN2026 was free to attend. Travel bursaries were not available.</li></ul>
 </div></section>
 <section class="sec" id="hosts" aria-labelledby="h-hosts"><div class="wrap">
   <h2 class="h2" id="h-hosts" data-rise>Where it has been</h2>
@@ -65,9 +65,10 @@
       <li><a class="" href="https://sar2027.eu/sk" rel="noopener" target="_blank">SAR 2027<span class="ext-mark" aria-hidden="true">↗</span><span class="vh"> (opens in a new tab)</span></a></li>
       <li><a class="" href="https://aparn.net" rel="noopener" target="_blank">Current aparn.net<span class="ext-mark" aria-hidden="true">↗</span><span class="vh"> (opens in a new tab)</span></a></li></ul></div>
     <div><h2 class="foot-h">This prototype</h2><p class="small">A redesign proposal for discussion. Content checked 24 November 2026.</p><ul class="foot-list">
+      <li><a href="../../compare/">Compare all three concepts</a></li>
       <li><a href="../../sources/">Sources, credits and open questions</a></li>
       <li><a href="https://teohsingjian02.github.io/aparn-prototypeA/">See Concept A: Editorial Gallery</a></li>
-      <li><a href="https://teohsingjian02.github.io/aparn-prototypeB/">See Concept B: Living Network</a></li></ul></div>
+      <li><a href="https://teohsingjian02.github.io/aparn-prototypeB/">See Concept B: Living Network</a></li></ul><button type="button" class="motion-sw" data-motion-toggle aria-pressed="false" hidden><span>Animations</span><span class="motion-sw-k" aria-hidden="true"></span></button></div>
   </div>
 </footer>
 <a class="totop" href="#main" data-totop><svg viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M10 16V4M5 9l5-5 5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="vh">Back to top</span></a>
