@@ -13,6 +13,7 @@
 <link rel="preload" href="../assets/fonts/roboto-normal-latin-3.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="../assets/c.css">
 <script>document.documentElement.classList.add("js", "anim");</script>
+<script>try { if (localStorage.getItem("aparn-invert") === "on") document.documentElement.classList.add("invert"); } catch (e) {}</script>
 <script defer src="../assets/js/aparn.js"></script>
 <script defer src="../assets/js/motion.js"></script>
 <script defer src="../assets/js/c.js"></script>
@@ -89,7 +90,8 @@
   <div class="wrap foot-in">
     <div class="foot-a"><a class="logo" href="../"><img class="brand-logo" src="../assets/brand/logo-black-300.png" srcset="../assets/brand/logo-black-300.png 300w, ../assets/brand/logo-black-600.png 600w" sizes="140px" width="300" height="99" alt="APARN home" decoding="async"></a>
       <p>A Special Interest Group of the <a href="https://societyforartisticresearch.org/" rel="noopener" target="_blank">Society for Artistic Research<span class="ext-mark" aria-hidden="true">↗</span><span class="vh"> (opens in a new tab)</span></a>.</p>
-      <a class="btn btn--join" href="https://groups.google.com/g/ap-arn" rel="noopener" target="_blank" data-join>Join APARN<span class="vh"> (opens Google Groups in a new tab)</span></a><p class="small">Opens Google Groups. You join there.</p></div>
+      <a class="btn btn--join" href="https://groups.google.com/g/ap-arn" rel="noopener" target="_blank" data-join>Join APARN<span class="vh"> (opens Google Groups in a new tab)</span></a><p class="small">Opens Google Groups. You join there.</p>
+      <button type="button" class="invert-btn" data-invert aria-pressed="false" title="Invert colours" hidden><svg viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="7.4" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10 2.6a7.4 7.4 0 0 1 0 14.8z" fill="currentColor"/></svg><span class="vh">Invert colours</span></button></div>
     <div><h2 class="foot-h">Contact</h2><p>Dr Roopesh Sitharan, Director<br><a href="mailto:rs@mmu.edu.my">rs@mmu.edu.my</a></p><p><a href="../about/#contact">All contacts</a></p></div>
     <div><h2 class="foot-h">Elsewhere</h2><ul class="foot-list">
       <li><a class="" href="https://jar-online.net/en/channels/asia-pacific-artistic-research-network" rel="noopener" target="_blank">APARN in JAR<span class="ext-mark" aria-hidden="true">↗</span><span class="vh"> (opens in a new tab)</span></a></li>
